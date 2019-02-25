@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="http://localhost:9002/custom.css">
+  <link rel="stylesheet" href="/styles.css">
+  <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel='stylesheet' type='text/css' href="http://localhost:9003/style.css">
+  <link rel='stylesheet' type='text/css' href="http://localhost:9003/postStyle.css">
+  <link rel="shortcut icon" sizes="76x76" type="image/x-icon" href="/img/favicon.ico">
+
+  <title>Rotten Tomatoes</title>
+</head>
+
+<body>
+  <div id="main" class="container">
+
+    <!-- NavBar Code -->
+
+    <nav id="header" class="navbar rt-navbar navbar-expand-md">
+      <ul class="navbar-nav ml-auto">
+        <li>
+          <a href="#">What is the Tomotometer?</a>
+        </li>
+        <li>
+          <a href="#">Critics</a>
+        </li>
+        <li>
+          <a href="#">Sign up</a>
+        </li>
+      </ul>
+    </nav>
+    <nav id="nav" class="navbar navbar-expand-md rt-navbar">
+
+      <div class="navbar-brand">
+        <a href="/"><img id="logo" src="/img/rtlogo-header.png"></a>
+      </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-md-4" id="searchtext" type="search" placeholder="Search movies, TV, actors, more..." aria-label="Search">
+          <button class="my-2 my-sm-0" id="searchbtn" type="submit">Search</button>
+        </form>
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">MOVIES & DVDS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">TV</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">NEWS</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#">TICKETS & SHOWTIMES</a>
+          </li>
+        </ul>
+
+
+
+
+
+      </div>
+    </nav>
+    <!-- Trending on RT Bar -->
+    <nav id="trending" class="navbar navbar-expand-md">
+      <div class="navbar-right">
+        <ul class="navbar-nav mr-auto">
+          <li>
+            <a href="#" id="TrendingRT">TRENDING ON RT</a>
+          </li>
+          <li>
+            <a href="#">150 Best Romantic Comedies</a>
+          </li>
+          <li>
+            <a href="#">Best of Amazon Prime</a>
+          </li>
+          <li>
+            <a href="#">February TV Bing Guide</a>
+          </li>
+          <li>
+              <a href="#">Oscars Winners</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="row no-gutters">
+      <!-- Sidebar Column -->
+      <div class="order-md-first order-last" id="sidebar">
+        <div class="sidebar-content">
+          <h3>Current Movies</h3>
+          <table>
+            <tbody>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/black_panther">
+                    <img src="/img/tiny-certified.png" class="icon-tiny-certified"></img>
+                    <span class="sidebarScore">97%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/black_panther">Black Panther</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/the_avengers">
+                    <img src="/img/tiny-certified.png" class="icon-tiny-certified"></img>
+                    <span class="sidebarScore">79%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/the_avengers">The Avengers</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/welcome_to_marwen">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">69%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/welcome_to_marwen">Welcome to Marwen</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/polar">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">63%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/polar">Polar</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/bohemian_rhapsody">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">60%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/bohemian_rhapsody">Bohemian Rhapsody</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/logan">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">43%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/logan">Logan</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/justice_league">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">42%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/justice_league">Justice League</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/aquaman">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">41%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/aquaman">Aquaman</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <h3>Some Others You May Like</h3>
+
+
+          <table>
+            <tbody>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/mary_poppins_returns">
+                    <img src="/img/tiny-certified.png" class="icon-tiny-certified"></img>
+                    <span class="sidebarScore">79%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/mary_poppins_returns">Mary Poppins Returns</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/dragon_ball_super_broly">
+                    <img src="/img/tiny-certified.png" class="icon-tiny-certified"></img>
+                    <span class="sidebarScore">81%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/dragon_ball_super_broly">Dragon Ball Super: Broly</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/bird_box">
+                    <img src="/img/tiny-certified.png" class="icon-tiny-certified"></img>
+                    <span class="sidebarScore">69%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/bird_box">Bird Box</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/velvet_buzzsaw">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">64%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/velvet_buzzsaw">Velvet Buzzsaw</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/Overlord">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">63%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/Overlord">Overlord</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/the_standoff_at_sparrow_creek">
+                    <img src="/img/tiny-fresh.png" class="icon-tiny-fresh"></img>
+                    <span class="sidebarScore">63%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/the_standoff_at_sparrow_creek">The Standoff at Sparrow C...</a>
+                </td>
+              </tr>
+
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/halloween">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">33%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/halloween">Halloween</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/escape_room">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">38%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/escape_room">Escape Room</a>
+                </td>
+              </tr>
+              <tr class="sidebarTR">
+                <td class="sidebarTomato">
+                  <a href="/m/the_kid_who_would_be_king">
+                    <img src="/img/tiny-rotten.png" class="icon-tiny-rotten"></img>
+                    <span class="sidebarScore">41%</span>
+                  </a>
+                </td>
+                <td class="sidebarTitle">
+                  <a href="/m/the_kid_who_would_be_king">The Kid Who Would Be King</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+      </div>
+      <!-- Primary Column -->
+      <div class="col-12" id="primary">
+        <app-root></app-root>
+
+        <div id="showtime"></div>
+        <div id="audience-reviews"></div>
+      </div>
+    </div>
+    <div class="row" id="footer">
+      For the Black Panther Demo images The Movie DB was used:
+      <img src="http://www.themoviedb.org/assets/1/v4/logos/primary-green-d70eebe18a5eb5b166d5c1ef0796715b8d1a2cbc698f96d311d62f894ae87085.svg" role="presentation">
+    </div>
+  </div>
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="http://localhost:9001/runtime.js"></script><script type="text/javascript" src="http://localhost:9001/es2015-polyfills.js" nomodule></script><script type="text/javascript" src="http://localhost:9001/polyfills.js"></script><script type="text/javascript" src="http://localhost:9001/styles.js"></script><script type="text/javascript" src="http://localhost:9001/vendor.js"></script><script type="text/javascript" src="http://localhost:9001/main.js"></script>
+    <script src="http://localhost:9002/build.js"></script>
+    <script src="//unpkg.com/babel-polyfill@latest/dist/polyfill.min.js"></script>
+    <script src="//unpkg.com/bootstrap-vue@latest/dist/bootstrap-vue.js"></script>
+    <script type="text/javascript" src="http://localhost:9003/bundle.js"></script>
+    <script type="text/javascript" src="http://localhost:9003/toggle.js"></script>
+
+</body>
+
+</html>
